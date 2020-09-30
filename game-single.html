@@ -99,7 +99,8 @@
 				<div class="col-xl-9 col-lg-8 col-md-7 game-single-content">
 					<div class="gs-meta">11.11.18  /  in <a href="">Games</a></div>
 					<h2 class="gs-title">Final Appocalipse 2.1</h2>
-
+			<div class="twitch">
+				<div class="twitch-video">
 					<iframe
 					src="https://player.twitch.tv/?channel=hasanabi&parent=woke.ninja&muted=true"
 					height="720"
@@ -108,7 +109,8 @@
 					scrolling="no"
 					allowfullscreen="true">
 					</iframe>
-
+				</div>
+				<div class="twitch-chat">
 					<iframe
 					frameborder="0"
 					scrolling="no"
@@ -116,7 +118,53 @@
 					height="100%"
 					width="100%">
 				  </iframe>
+				  </div>
+			</div>
+			<style>
+			.twitch .twitch-video {
+				padding-top: 56.25%;
+				position: relative;
+				height: 0;
+			}
 
+			.twitch .twitch-video iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+			}
+
+			.twitch .twitch-chat {
+				height: 400px;
+			}
+
+			.twitch .twitch-chat iframe {
+				width: 100%;
+				height: 100%;
+			}
+
+
+			@media screen and (min-width: 850px) {
+			.twitch {
+				position: relative;
+			}
+
+			.twitch .twitch-video {
+			width: 75%;
+				padding-top: 42.1875%;
+			}
+
+			.twitch .twitch-chat {
+				width: 25%;
+				height: auto;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				}
+			}
+				
+			</style>
 
 					<h4>Gameplay</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquamet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum posuere porttitor justo id pellentesque. Proin id lacus feugiat, posuere erat sit amet, commodo ipsum. Donec pellentesque vestibulum metus.</p>
